@@ -1,0 +1,232 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you","Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+	{"tag": "initial",
+         "patterns": ["I am not feeling well","I am not okay.","I am feeling week"],
+         "responses": ["Ohho Don't worry. I'll help you.", "Be relax. Tell me Symptoms you are suffering from.", "Here I am to assist you."],
+         "context": [""]
+        },
+	{"tag": "fever",
+         "patterns": ["I have a fever "," I am having temperature more than 38 degree ","feeling like shivering ","having muscles and joint aches "," headache" ," feeling faint "," having eye pain " ,  "having weakness ", "i am having temperature more than 38 degree" ," feeling like shivering" ," having muscles and joint aches" ," feeling faint ", "having weakness"],
+         "responses": ["It seems like you are having FEVER,You may take few medicines from this=>Paracetamol,-Acetaminophen, -Aspirin, -Advil Capsule, -Voltaren, -Dolo, -Prednisone, -Methylprednisolone,https://www.youtube.com/watch?v=ntQbzFHZfeE,You can meet one of the doctor from this list..."],
+         "context": [""]
+        },           
+         {"tag": "ringworm",
+         "patterns": ["A scaly ring-shaped area", "typically on the buttocks", "trunk "," arms and legs ", "A clear or scaly area inside the ring" , "perhaps with a scattering of red bumps" , "A round"," flat patch of itchy skin"],
+         "responses": ["It seems like you have ringwarm,You may take few medicines:-,Griseofulvin (Grifulvin V , Gris-PEG) , Terbinafine , and Itraconazole ,Terbinafine-tablets,You can meet one of the doctor from this list..."],
+         "context": [""]
+        },      
+
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can guide you through Advise drug list, Hospitals and Pharmacies", "Offering support for Advise drug , Hospitals and Pharmacies"],
+         "context": [""]
+        },
+	{"tag": "Blackheads",
+         "patterns": ["I have dark color","  blackheads are easy to spot on the skin. They’re slightly raised"," although they aren’t painful because they aren’t inflamed like pimples. Pimples form when bacteria invade the blockage in the hair follicle"," causing redness and inflammation"],
+         "responses": ["It seems like you are having blackheads,You may take few medicines and treatments from this=>The drugs contain ingredients such as salicylic acid, benzoyl peroxide, and resorcinol,Exfoliating scrubs and masks remove dead skin cells from your face and can help reduce blackheads,You can meet one of the doctor from this list..."],
+         "context": [""]
+        },
+        {"tag": "psoriasis",
+         "patterns": ["I have a Red patches of skin covered with thick"," silvery scales","Small scaling spots (commonly seen in children)","Dry"," cracked skin that may bleed or itch","Itching"," burning or soreness","Thickened"," pitted or ridged nails","Swollen and stiff joints"],
+         "responses": ["It seems like you are having psoriasis,You may take few medicines and treatments from this=> ,Corticosteroids,Vitamin D analogues,Retinoids,Calcineurin inhibitors,Salicylic acid,Coal tar,Goeckerman therapy,Aloe extract cream,Essential oils,You can meet one of the doctor from this list..."],
+         "context": [""]
+        },
+        
+        {"tag": "dry, cracked skin",
+         "patterns": [" I have a feeling of skin tightness"," especially after showering"," bathing or swimming","Skin that feels and looks rough","Slight to severe flaking"," scaling or peeling,Gray"," ashy skin,Redness","Deep cracks that may bleed"],
+         "responses": ["It seems like you are dry and cracked skin,You may take few medicines and treatments from this=> ,CeraVe Moisturizing Cream,Vanicream Moisturizing Skin Cream,La Roche-Posay Lipikar Balm AP+ Moisturizer,Himalaya Nourshing Skin Cream,You can meet one of the doctor from this list..."],
+         "context": [""]
+        },
+        
+         {"tag": "ulcers",
+         "patterns": ["Gnawing or burning pain in your middle or upper stomach between meals or at night","Heartburn","Nausea or vomiting","Bloating"],
+         "responses": ["It seems like you have ulcers,You may take few medicines:-,omeprazole (Prilosec), lansoprazole (Prevacid),rabeprazole (Aciphex), esomeprazole (Nexium) and pantoprazole (Protonix),You can meet one of the doctor from this list..."],
+         "context": [""]
+        },
+        
+        {"tag": "rosacea",
+         "patterns": ["Facial redness","Swollen"," red bumps"," swollen eyes and red"," swollen eyelids","Enlarged nose"],
+         "responses": ["It seems like you have rosacea,You may take few medicines:-,azelaic acid (Azelex, Finacea), metronidazole (Metrogel, Noritate, others) and ivermectin (Soolantra). With azelaic acid and metronidazole,You can meet one of the doctor from this list..."],
+         "context": [""]
+        },
+        
+        {"tag": "open sores or lesions",
+         "patterns": ["Difficulty breathing","Fever and chills","Headache","Itchy feeling","Joint pain or stiffness","Nausea with or without vomiting","Redness"," warmth or swelling,Sores that contain pus,Sweating"],
+         "responses": ["It seems like you have open sores or lesions,You may take few medicines:- ,Laser surgery,Oatmeal baths or lotions ,absorbent powders or protective balms,You can meet one of the doctor from this list..."],
+         "context": [""]
+        },
+
+	{"tag": "CHICKEN POX",
+         "patterns": [" I have a Chicken pox ","Loss of appetite","Headache","Tiredness and a general feeling of being unwell (malaise)"],
+         "responses": ["It seems like you are having CHIKEN POX disease,You may take few medicines from this=> ,acyclovir (Zovirax, Sitavig),immune globulin intravenous (Privigen),You can meet one of the doctor from this list..."],
+         "context": [""]
+         },
+	       
+   	 {"tag": "Acne",
+         "patterns": [" I am Crusting of skin bumps","Papules (small red bumps)","Pustules (small red bumps containing white or yellow pus)","Redness around the skin eruptions","Scarring of the skin","Whiteheads","Blackheads"],
+         "responses": ["It seems like you are having Acne,You may take few medicines from this=>- ,Retinoids and retinoid-like drugs,Antibiotics,Azelaic acid and salicylic acid,Dapsone,You can meet one of the doctor from this list.."],
+         "context": [""]
+     	},
+     	{"tag": "Eczema",
+         "patterns": ["I am skin itches"," turns red"," burns"," and stings","itchy bumps called hives may pop up on your skin,over time"," the skin may thicken and feel scaly or leathery","fluid-filled blisters can form that may ooze and crust over"],
+         "responses": ["It seems like you are having Eczema disease,You may take few medicines from this=> ,Topical corticosteroid creams and ointments,Systemic corticosteroids,Antibiotics,Antiviral and antifungal medications,Antihistamines,Home care-taking lukewarm baths,moisturizing every day,wearing cotton and soft fabrics etc,You can meet one of the doctor from this list..."],
+         "context": [""]
+        },
+	{"tag": "hives",
+         "patterns": ["I am outbreak of swollen","pale red bumps or plaques (wheals)"],
+         "responses": ["It seems like you are having hives disease,You may take few medicines from this=>Avoid triggers,Use an over-the-counter anti-itch drug,Apply cold washcloth,Take a comfortably cool bath,Wear loose, smooth-textured cotton clothing,Avoid the sun,You can meet one of the doctor from this list..."],
+         "context": [""]
+        },
+	{"tag": "dark circles",
+         "patterns": ["dark coloration of the skin under the eyes,"],
+         "responses": ["It seems like you are having dark circles,You may take few medicines from this=> ,Avoid triggers,Use an over-the-counter anti-itch drug,Apply cold washcloth,Take a comfortably cool bath,Wear loose, smooth-textured cotton clothing,Avoid the sun,You can meet one of the doctor from this list..."],
+         "context": [""]
+        },
+	{"tag": "Sinus Infection",
+         "patterns": ["i am having Pain in the face"," itching, pain in forehead"," pain in sinuses"," loss of smell,Nasal congestion"," pain in back of the eyes, ear","I am feeling loss of smell"," pain in forehead"," runny nose"," sneezing ,pain in sinuses ,Pain in the face ,itching","I am having pain in forehead"," pain in sinuses"," Nasal congestion"," distorted sense of smell"," loss of smell"," itching"," sneezing"],
+         "responses": ["It seems like you are having Sinus infection,You may take few medicines and home treatment from this=>,Flonase and Dymista (fluticasone propionate), Nasonex (mometasone furoate), hydrocortisone, Nasacort AQ (triamcinolone),Use of Nasal sprays,Staying hydrated, Breathing in steam,Raising the head during sleep,You can meet one of the doctor from this list..."],
+         "context": [""]
+        },
+	{"tag": "Allergic Rhinitis",
+         "patterns": ["i am having Pain in the ear"," Nasal congestion"," redness"," runny nose"," post-nasal drip"," sneezing"," stuffy nose ,Eyes itchiness, puffy eyes, redness,watery eyes","I am feeling post-nasal drip"," puffy eyes","runny nose"," Nasal congestion"," sneezing "," Eyes itchiness"," Pain in the ear","I am having watery eyes"," Nasal congestion "," redness "," Pain in the ear "," post-nasal drip "," stuffy nose "," sneezing"],
+         "responses": ["It seems like you are having Allergic Rhinitis,You may take few medicines and home treatment from this=>,Intranasal corticosteroids are the single most effective drug class for treating allergic rhinitis. They can significantly reduce nasal congestion as well as sneezing, itching and a runny nose,You can meet one of the doctor from this list..."],
+         "context": [""]
+        },
+	{"tag": "Food Allergy",
+         "patterns": ["i am having Pain in the abdomen"," diarrhoea, indigestion"," nausea"," passing excessive amounts of gas"," vomiting"," flatulence","I am having flatulence"," nausea "," Pain in the abdomen ","passing excessive amounts of gas"," vomiting","I am having diarrhoea,passing excessive amounts of gas , vomiting, Pain in the abdomen "," flatulence"],
+         "responses": ["It seems like you are having Food Allergy,You may take few medicines and home treatment from this=>,OTC or prescribed antihistamines such as diphenhydramine (Benadryl) may help reduce symptoms,Clean out your nose,Try an over-the-counter allergy medicine,Consider a prescription nasal spray or eye drops,Decongestants may also help relieve nasal congestion,Close your windows, and turn on the air conditioning,You can meet one of the doctor from this list..."],
+         "context": [""]
+        },
+	{"tag": "Anaphylaxis",
+         "patterns": ["I am feeling Whole body fainting"," light-headedness","low blood pressure"," dizziness "," flushing"," difficulty breathing"," rapid breathing"," shortness of breath","wheezing","I am having rapid breathing "," Whole body fainting "," flushing","difficulty breathing ","light-headedness "," low blood pressure ","dizziness","I am having Whole body fainting "," light-headedness ","difficulty breathing ","wheezing"," low blood pressure"," flushing "," shortness of breath"],
+         "responses": ["It seems like you are having Anaphylaxis,You may take few medicines and home treatment from this=>,Epinephrine (adrenaline) ","Intravenous (IV) antihistamines and cortisone ","Oxygen,etc..,You can meet one of the doctor from this list..."],
+         "context": [""]
+        },
+	{"tag": "Contact Dermatitis",
+         "patterns": ["I am having Pain in the skin " , "rashes" , " redness ", " blister " ," fissures"," hives"," peeling","itching ","swelling","I am having swelling"," fissures"," itching on skin "," blister"," redness"," peeling","I am feeling hives"," peeling"," fissures"," swelling"," itching"," rashes on skin"],
+         "responses": ["It seems like you are having Contact Dermatitis,You may take few medicines and treatment from this=> , Steroid creams or ointments,Oral medications,Avoid the irritant or allergen,Apply an anti-itch cream or lotion to the affected area,Soak in a comfortably cool bath,etc.., You can meet one of the doctor from this list..."],
+         "context": [""]
+        },
+	{"tag": "Cough",
+         "patterns": ["I am having runny nose"," having sore throat" ," feeling Hoarseness " ," feeling shortness of breath " ," having soir taste in mouth "," Difficulty swallowing "," coughing when swallowing","i am having runny nose "," feeling Hoarseness "," feeling shortness of breath "," having soir taste in mouth "," Difficulty swallowing ", "i am having runny nose "," having sore throat "," feeling shortness of breath "," Difficulty swallowing "," coughing when swallowing" ],
+         "responses": ["It seems like you are having COUGH ,You may take few medicines from this=> , Tussionex Pennkinetic , -Tessalon Perles, -Torrex, -Hydromet, -Acetaminophen / Hydrocodone, -Benylin Chesty Coughs, -Robitussin Chesty Cough, -Benylin Dry Coughs syrup, -Mucinex DM,You can meet one of the doctor from this list... "],
+         "context": [""]
+        },
+
+	{"tag": "Eye Allergies",
+         "patterns": ["Iam having Red eyes"," irritated eyes,Itchiness","Tearing eyes ","runny eyes","Swollen eyelids"," Soreness"," burning,pain  in eyes ","Sensitivity to light","i am having pain in eyes"," Red eyes"," Sensitivity to light","runny eyes","burning"," Tearing eyes, Soreness"],
+         "responses": ["It seems like you are having Eye Allergies,You may take few medicines and treatment from this =>, Artificial tear drops,Decongestants (with or without antihistamines),Oral antihistamines,etc.., You can meet one of the doctor from this list.."],
+         "context": [""]
+        },
+        {"tag": "COLD",
+         "patterns": ["I am having runny nose "," sore throat" ," cough " ," congestion " ," body ache " ," head ache" ," sneezing " ," loss of smell "," loss of taste "," difficulty in breathing", "i am having difficulty in breathing "," body ache, loss of taste"," congestion "," loss of smell "," sneezing "," sore throat" , "i am having head ache"," congestion"," runny nose"," difficulty in breathing"," loss of smell "," body ache ","loss of taste" ],
+         "responses": ["It seems like you are having COLD ,You may take few medicines from this=>, Nasal decongestants , -Crocin ,-Mucinex, -Tussionex , -Claritin-D 24 Hour  ,-Benadryl Allergy Plus Congestion,You can meet one of the doctor from this list... "],
+         "context": ["search_blood_pressure_by_patient_id"]
+        },
+	{"tag": "CICKEN POX",
+         "patterns": ["I am having fever" , "muscle ache" ," loss of apptite " ," feeling like nausea" ," having rashes on skin", " having spots on skin "," having Blisters "," feeling dryness "," having breathing dificulties "," having itchiness" , "i am feeling like nausea "," having fever "," having rashes on skin "," loss of apptite "," feeling dryness "," having itchiness "," having Blisters ", "i am having Blisters "," having fever "," having itchiness "," feeling like nausea "," having breathing dificulties "," feeling dryness "," loss of apptite"],
+         "responses": ["It seems like you are having CHICKEN POX ,You may take few medicines from this=> , -Zovirax , -Famvir , -Foscavir, -Denavir, -Valtrex, -Acyclovir, -Valacyclovir, -Acyclovir Sodium Vial,You can meet one of the doctor from this list... "],
+         "context": [""]
+        },
+	{"tag": "Depression",
+         "patterns": ["What Is Depression", "I am Depressed"],
+         "responses": ["Depression is a common and serious medical illness that negatively affects how you feel, Depression causes feelings of sadness and/or a loss of interest in activities you once enjoyed, It can lead to a variety of emotional and physical problems and can decrease your ability to function at work and at home , Depression is a mood disorder that causes a persistent feeling of sadness and loss of interest , Also called major depressive disorder or clinical depression , it affects how you feel , think and behave and can lead to a variety of emotional and physical problems, Best Motivational Speech Videos to help you make it through hard times, depression, anxiety, sadness and anger => https://www.youtube.com/watch?v=ZebSXPUCPFc."],
+         "context": [""]
+        },
+        {"tag": "I feel i have let my parents down",
+         "patterns": ["I feel i have let my parents down"],
+         "responses": ["No matter what,your parents will always be proud of you and will love you,You will feel much better if you share your feelings with them,WATCH THIS => https://www.youtube.com/watch?v=BeXOWtLnnAQ, https://www.youtube.com/watch?v=1pMVNIxogl0"],
+         "context": [""]
+        },
+	{"tag": "What are the types of depression",
+         "patterns": ["What are the types of depression"],
+         "responses": ["There are many different forms of depression but most common types are,Clinical depression,Persistent depressive disorder,bipolar disorder,postnatal disorder,Best Motivational Speech Videos to help you make it through hard times, depression, anxiety, sadness and anger => https://www.youtube.com/watch?v=ZebSXPUCPFc"],
+         "context": [""]
+        },
+        {"tag": "I am good for nothing",
+         "patterns": ["I am good for nothing"],
+         "responses": ["Don't ever think you cannot achieve what you want,You are capable of reaching your goals,Here is a quote for you Everything you can imagine is real, WATCH THIS => https://www.youtube.com/watch?v=ztZI2aLQ9Sw"],
+         "context": [""]
+        },
+        {"tag": "stressed",
+         "patterns": ["I am feeling stressed lately"],
+         "responses": ["My research says that music is the best way to calm yourself,so visit the link and listen to your favourite music, WATCH THIS => https://www.youtube.com/watch?v=jDU2OI1gjiA, https://www.youtube.com/watch?v=YhpU8VME8Gw"],
+         "context": [""]
+        },
+        {"tag": "Kill",
+         "patterns": ["i want to kill myself"],
+         "responses": ["Helpline is available,you can contact the counsellor today:9152987821,Always remember you mean something to someone, WATCH THIS VIDEO => https://www.youtube.com/watch?v=3m6ccyXL_WU"],
+         "context": [""]
+        },
+	{"tag": "failure",
+         "patterns": ["i am afraid i will fail again"],
+         "responses": ["failure is the stepping stone towards success,Never fear failure,Your hardwork and determination will help you reach your goal"],
+         "context": [""]
+        },
+	{"tag": "Depression",
+         "patterns": ["What are the causes of depression"],
+         "responses": ["It's complicated, and there are multiple causes of major depression, Factors such as genetic vulnerability, severe life stressors, substances you may take (some medications, drugs and alcohol) and medical conditions can affect the way your brain regulates your moods, WATCH THIS VIDEO => https://www.youtube.com/watch?v=d1sVO6x9p5U, https://www.youtube.com/watch?v=AvjMa9kqlCM "],
+         "context": [""]
+        },
+        {"tag": "What are the top causes of depression",
+         "patterns": ["What are the top causes of depression"],
+         "responses": ["Abuse, Past physical, sexual, or emotional abuse can increase the vulnerability to clinical depression later in life, WATCH THIS VIDEO => https://www.youtube.com/watch?v=d1sVO6x9p5U"],
+         "context": [""]
+        },
+        {"tag": "Which age group has the highest rate of depression",
+         "patterns": ["Which age group has the highest rate of depression?","Which country has the highest rate of depression?"],
+         "responses": ["This number represented 7.1% of all U.S. adults,The prevalence of major depressive episode was higher among adult females (8.7%) compared to males (5.3%). The prevalence of adults with a major depressive episode was highest among individuals aged 18-25 (13.1%), The most depressed country is Afghanistan, where more than one in five people suffer from the disorder. The least depressed is Japan, with a diagnosed rate of less than 2.5 percent"],
+         "context": [""]
+        },
+        {"tag": "Which country has the lowest rate of depression",
+         "patterns": ["Which country has the lowest rate of depression?"],
+         "responses": ["The most depressed country is Afghanistan, where more than one in five people suffer from the disorder, The least depressed is Japan, with a diagnosed rate of less than 2.5 percent"],
+         "context": [""]
+        },
+        {"tag": "Is school a cause of depression",
+         "patterns": ["Is school a cause of depression?"],
+         "responses": ["Not only does school sometimes contribute to depression, depression can also interfere with school. Moreover, research shows that 75 percent of all mental health conditions begin by age 24. Hence, the college years are a critical time for understanding and talking about teen mental health, WATCH THIS VIDEO => https://www.youtube.com/watch?v=nSpTL7lYwvY"],
+         "context": [""]
+        },
+        {"tag": "anxiety",
+         "patterns": ["What is the meaning of anxiety and depression","I have Anxiety"],
+         "responses": ["Depression and anxiety disorders are different,but people with depression often experience symptoms similar to those of an anxiety disorder,such as nervousness, irritability, and problems sleeping and concentrating. But each disorder has its own causes and its own emotional and behavioral symptoms, WATCH THIS VIDEO => https://www.youtube.com/watch?v=eAK14VoY7C0&t=256s"],
+         "context": [""]
+        },
+        {"tag": "Does oversleeping cause depression",
+         "patterns": ["Does oversleeping cause depression?"],
+         "responses": ["It's important to remember that oversleeping is a possible symptom of depression and that oversleeping doesn't cause depression,But it can exacerbate and worsen depression symptoms, WATCH THIS VIDEO => https://www.youtube.com/watch?v=2Syw-VbbBnI"],
+         "context": [""]
+        },
+        {"tag": "Can lack of sleep make you feel sad",
+         "patterns": ["Can lack of sleep make you feel sad?"],
+         "responses": ["Studies show people who are sleep deprived report increases in negative moods (anger, frustration, irritability, sadness) and decreases in positive moods,And sleeplessness is often a symptom of mood disorders, such as depression and anxiety, WATCH THIS VIDEO => https://www.youtube.com/watch?v=rdh1EXaeEx8"],
+         "context": [""]
+        },
+        {"tag": "Is depression a side effect of diabetes",
+         "patterns": ["Is depression a side effect of diabetes?"],
+         "responses": ["If you have diabetes — either type 1 or type 2 — you have an increased risk of developing depression. And if you're depressed, you may have a greater chance of developing type 2 diabetes,The good news is that diabetes and depression can be treated together, WATCH THIS VIDEO => https://www.youtube.com/watch?v=eAK14VoY7C0&t=256s"],
+         "context": [""]
+        }
+
+   ]
+}
